@@ -8,9 +8,9 @@ import { Toaster } from '@/components/ui/toaster'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Convertify',
+  title: 'Convertly',
   description:
-    "A versatile and user-friendly online file converter designed to meet all your file transformation needs. Whether you're converting documents, images, videos, or audio files, Convertify makes the process seamless and efficient",
+    "A versatile and user-friendly online file converter designed to meet all your file transformation needs. Whether you're converting documents, images, videos, or audio files, Convertly makes the process seamless and efficient",
   creator: 'Ali Ozcan',
   keywords:
     'image converter, video converter, audio converter, unlimited image converter, umlimited video converter, various types of files, quick converts',
@@ -26,7 +26,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Providers>
           <Navbar />
-          <main className="min-h-screen container mx-auto max-w-4xl lg:max-w-6xl">{children}</main>
+          <main className="py-12 container mx-auto max-w-4xl lg:max-w-6xl">{children}</main>
           <Toaster />
         </Providers>
       </body>

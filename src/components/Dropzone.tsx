@@ -65,7 +65,7 @@ export default function Dropzone() {
   const [is_done, setIsDone] = useState<boolean>(false)
   const ffmpegRef = useRef<any>(null)
   const [defaultValues, setDefaultValues] = useState<string>('video')
-  const [selcted, setSelected] = useState<string>('...')
+  const [selcted, setSelected] = useState<string>('jpg')
   const accepted_files = {
     'image/*': ['.jpg', '.jpeg', '.png', '.gif', '.bmp', '.webp', '.ico', '.tif', '.tiff', '.raw', '.tga'],
     'audio/*': [],
