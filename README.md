@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+# Convertly
+
+Convertly is an online file conversion tool designed to simplify the process of converting multimedia files effortlessly.
+
+## Features
+
+- **Multimedia Conversion:** Convert images, audio, and videos easily.
+- **Local Processing:** All conversions are processed locally on your device for enhanced privacy and security.
+- **Free Service:** Convertly is completely free to use.
+- **No Data Storage:** We do not save or store your files during the conversion process.
 
 ## Getting Started
 
-First, run the development server:
+To start using Convertly, simply visit the following website: [files-converter](https://files-converter.vercel.app/).
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## How to Use
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Upload your file(s) to Convertly.
+2. Select the desired output format.
+3. Click "Convert" to start the conversion process.
+4. Download your converted file(s) once the process is complete.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Technologies Used
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Frontend: NextJS
+- Backend: [Backend technology stack, if applicable]
+- Libraries/Frameworks: [List any relevant libraries or frameworks used]
 
-## Learn More
+## How to run
 
-To learn more about Next.js, take a look at the following resources:
+If you want to run Convertly locally, follow these steps:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Clone the repository
+2. Navigate into the project directory
+3. install dependencies (npm install)
+4. Start the server with the following command: npm run dev
