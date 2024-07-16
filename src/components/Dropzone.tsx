@@ -229,20 +229,20 @@ export default function Dropzone() {
             </div>
 
             {action.is_error ? (
-              <Badge variant="destructive" className="flex gap-2">
+              <Badge variant="destructive" className="flex gap-1">
                 <span>Error Converting File</span>
-                <CircleAlert />
+                <CircleAlert size={14} />
               </Badge>
             ) : action.is_converted ? (
-              <Badge variant="default" className="flex gap-2 bg-green-500">
+              <Badge variant="default" className="flex gap-1 bg-green-500">
                 <span>Done</span>
-                <Check />
+                <Check size={14} />
               </Badge>
             ) : action.is_converting ? (
-              <Badge variant="default" className="flex gap-2">
+              <Badge variant="default" className="flex gap-1">
                 <span>Converting</span>
                 <span className="animate-spin">
-                  <Loader />
+                  <Loader size={14} />
                 </span>
               </Badge>
             ) : (
@@ -326,7 +326,7 @@ export default function Dropzone() {
             )}
 
             {action.is_converted ? (
-              <Button variant="outline" onClick={() => download(action)}>
+              <Button variant="outline" onClick={() => download(action)} className="ml-2">
                 Download
               </Button>
             ) : (
@@ -341,7 +341,10 @@ export default function Dropzone() {
         ))}
         <div className="flex w-full justify-end">
           {is_done ? (
-            <div className="space-y-4 w-fit">
+            <div className="flex flex-col md:flex-row gap-4 w-fit">
+              <Button size="lg" onClick={reset} variant="outline" className="rounded-xl">
+                Convert Another File(s)
+              </Button>
               <Button
                 size="lg"
                 className="rounded-xl font-semibold relative py-4 text-md flex gap-2 items-center w-full"
@@ -349,9 +352,6 @@ export default function Dropzone() {
               >
                 {actions.length > 1 ? 'Download All' : 'Download'}
                 <Download />
-              </Button>
-              <Button size="lg" onClick={reset} variant="outline" className="rounded-xl">
-                Convert Another File(s)
               </Button>
             </div>
           ) : (
@@ -417,7 +417,7 @@ export default function Dropzone() {
             ) : (
               <>
                 <div className="justify-center flex text-6xl">
-                  <CloudUpload />
+                  <CloudUpload size={60} />
                 </div>
                 <h3 className="text-center font-medium text-2xl">Click, or drop your files here</h3>
               </>
