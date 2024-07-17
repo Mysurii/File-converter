@@ -21,12 +21,6 @@ To start using Convertly, simply visit the following website: [files-converter](
 3. Click "Convert" to start the conversion process.
 4. Download your converted file(s) once the process is complete.
 
-## Technologies Used
-
-- Frontend: NextJS
-- Backend: [Backend technology stack, if applicable]
-- Libraries/Frameworks: [List any relevant libraries or frameworks used]
-
 ## How to run
 
 If you want to run Convertly locally, follow these steps:
